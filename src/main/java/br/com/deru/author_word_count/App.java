@@ -24,11 +24,10 @@ import org.apache.hadoop.mapreduce.lib.output.TextOutputFormat;
 
 public class App 
 {
-	
 	public static class TextArrayWritable extends ArrayWritable {
-        public TextArrayWritable() {
-            super(Text.class);
-        }
+		public TextArrayWritable() {
+			super(Text.class);
+		}
 
         public TextArrayWritable(String[] strings) {
             super(Text.class);
